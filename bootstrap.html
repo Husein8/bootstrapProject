@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TinDog</title>
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- css style sheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- font awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- bootstrap scripts -->
+</head>
+
+<body>
+<!-- 
+  <div class="container  p-5" style="background-color: aqua;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque magni aut obcaecati, maiores quo incidunt autem reiciendis quisquam doloremque perspiciatis animi quibusdam velit ipsam. Itaque alias possimus labore amet tempora nostrum reprehenderit! Numquam totam fugit fuga delectus unde autem nulla consequatur error, quo, esse culpa vero. Deserunt consequuntur officiis possimus. Ad repellendus vitae deleniti harum non necessitatibus nemo reiciendis pariatur magnam at illum, doloribus odit rerum explicabo repudiandae tenetur obcaecati impedit quisquam. Consequuntur aperiam aliquam sapiente neque cumque dolorum, iure, ab eius magnam repudiandae natus molestias libero? Labore corrupti explicabo ab ipsa laboriosam debitis error, amet quos, id deserunt odit sint obcaecati dolore impedit vero tempora saepe. At minima perferendis consequuntur quo expedita, porro a dolore architecto odit cumque, optio ea consectetur, aliquid quisquam. Dolorem commodi totam sint eos magnam quae ut dolores qui dignissimos exercitationem? Nulla quaerat, distinctio consectetur optio, modi molestiae quidem corporis dolorum rem amet cumque ipsa aliquam neque tempora aspernatur officia est eius ut officiis ex aperiam quia iusto autem! Eaque facere, labore doloremque aut soluta harum itaque nisi sed. Eveniet ipsa nesciunt officiis veniam sint placeat excepturi sed rem illo iure cupiditate fugiat nulla est et maiores aspernatur tempore alias nihil deleniti, dolore obcaecati ratione!
+  </div>
+
+  <div class="container-fluid p-5" style="background-color: red;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque magni aut obcaecati, maiores quo incidunt autem reiciendis quisquam doloremque perspiciatis animi quibusdam velit ipsam. Itaque alias possimus labore amet tempora nostrum reprehenderit! Numquam totam fugit fuga delectus unde autem nulla consequatur error, quo, esse culpa vero. Deserunt consequuntur officiis possimus. Ad repellendus vitae deleniti harum non necessitatibus nemo reiciendis pariatur magnam at illum, doloribus odit rerum explicabo repudiandae tenetur obcaecati impedit quisquam. Consequuntur aperiam aliquam sapiente neque cumque dolorum, iure, ab eius magnam repudiandae natus molestias libero? Labore corrupti explicabo ab ipsa laboriosam debitis error, amet quos, id deserunt odit sint obcaecati dolore impedit vero tempora saepe. At minima perferendis consequuntur quo expedita, porro a dolore architecto odit cumque, optio ea consectetur, aliquid quisquam. Dolorem commodi totam sint eos magnam quae ut dolores qui dignissimos exercitationem? Nulla quaerat, distinctio consectetur optio, modi molestiae quidem corporis dolorum rem amet cumque ipsa aliquam neque tempora aspernatur officia est eius ut officiis ex aperiam quia iusto autem! Eaque facere, labore doloremque aut soluta harum itaque nisi sed. Eveniet ipsa nesciunt officiis veniam sint placeat excepturi sed rem illo iure cupiditate fugiat nulla est et maiores aspernatur tempore alias nihil deleniti, dolore obcaecati ratione!
+  </div> -->
+
+  <!-- <div class="row" >
+    <div class="col-3" style="background-color: aqua; border: 1px solid;">
+      col-6
+    </div>
+    <div class="col-3" style="background-color: aqua; border: 1px solid;">
+      col-3
+    </div>
+    <div class="col-3" style="background-color: aqua; border: 1px solid;">
+      col-3
+    </div>
+    <div class="col-3" style="background-color: aqua; border: 1px solid;">
+      col-3
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-3" style="background-color: blueviolet; border: 1px solid;">
+      col-md-6
+    </div>
+    <div class="col-md-3" style="background-color: blueviolet; border: 1px solid;">
+      col-md-6
+    </div>
+    <div class="col-md-3" style="background-color: blueviolet; border: 1px solid;">
+      col-md-6
+    </div>
+    <div class="col-md-3" style="background-color: blueviolet; border: 1px solid;">
+      col-md-6
+    </div>
+  </div>
+
+
+  <div class="row">
+
+    <div class="col-lg-3 col-md-4 col-sm-6"  style="background-color: red; border: 1px solid;">
+      col-lg3 col-md-4 col-sm-6
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: red; border: 1px solid;">
+      col-lg3 col-md-4 col-sm-6
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: red; border: 1px solid;">
+      col-lg3 col-md-4 col-sm-6
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: red; border: 1px solid;">
+      col-lg3 col-md-4 col-sm-6
+    </div>
+  </div>
+
+  <div class="row" style="background-color: white; border: 20px solid white;">
+    <div class="col-lg-2 col-md-4" style="background-color: aquamarine; border: 1px solid;">
+      col-lg-2 col-md-4
+    </div>
+    <div class="col-lg-2 col-md-4" style="background-color: aquamarine; border: 1px solid;">
+      col-lg-2 col-md-4
+    </div>
+    <div class="col-lg-2 col-md-4" style="background-color: aquamarine; border: 1px solid;">
+      col-lg-2 col-md-4
+    </div>
+    <div class="col-lg-2 col-md-4" style="background-color: aquamarine; border: 1px solid;">
+      col-lg-2 col-md-4
+    </div>
+    <div class="col-lg-2 col-md-4" style="background-color: aquamarine; border: 1px solid;">
+      col-lg-2 col-md-4
+    </div>
+    <div class="col-lg-2 col-md-4" style="background-color: aquamarine; border: 1px solid;">
+      col-lg-2 col-md-4
+    </div>
+  </div> -->
+
+
+<section id="title">
+
+  <div class="container-fluid">
+
+      <!-- Nav Bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="">tindog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Download</a>
+          </li>
+        </ul>
+      </div>
+      
+    </nav>
+    
+    
+    
+    <!-- Title -->
+    
+  <div class="row">
+
+     <div class="col-lg-6 dog-center">
+        <h1 class="dog-centeer">Meet new and interesting dogs nearby.</h1>
+        <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+        <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+     </div>
+    
+     <div class="col-lg-6 ">
+      <img class="image-dog" src="images/iphone6.png" alt="iphone-mockup">
+     </div>
+    
+  </div>
+
+</div>
+  
+</section>
+
+
+<!-- Features -->
+
+<section id="features">
+
+    <div class="row">
+
+      <div class="feature-box col-lg-4">
+        <i class="icons fab fa-apple"></i>
+        <h3>Easy to use.</h3>
+        <p>So easy to use, even your dog could do it.</p>
+      </div>
+      
+      <div class="feature-box col-lg-4">
+        <i class="icons fab fa-apple"></i>
+        <h3>Elite Clientele</h3>
+        <p>We have all the dogs, the greatest dogs.</p>
+      </div>
+         
+      <div class="feature-box col-lg-4">  
+        <i class="icons fab fa-apple"></i>
+        <h3>Guaranteed to work.</h3>
+        <p>Find the love of your dog's life or your money back.</p>
+      </div>
+
+    </div>
+    
+</section>
+
+
+<!-- Testimonials -->
+
+    <section id="testimonials">
+
+      <div id="testimonial-slider" class="carousel slide" data-ride="false" data-bs-touch="true">
+        <div class="carousel-inner">
+          <div  class="carousel-item active">
+            <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+            <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+            <em>Pebbles, New York</em>
+          </div>
+          <div class="carousel-item">
+            <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+            <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+            <em>Beverly, Illinois</em>
+          </div>
+        </div>
+        <button class="carousel-control-prev" href="#testimonial-slider" type="button" data-bs-target="#testimonial-slider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" href="#testimonial-slider" type="button" data-bs-target="#testimonial-slider" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+          <!-- <div id="testimonial-slider" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+                <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+                <em>Pebbles, New York</em>        
+              </div>
+              <div class="carousel-item">
+                <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+                <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+                <em>Beverly, Illinois</em>
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" href="#testimonial-slider" type="button" data-bs-target="#testimonial-slider" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" href="#testimonial-slider" type="button" data-bs-target="#testimonial-slider" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div> -->
+  
+    </section>
+
+    <!-- data-bs-ride="false" doesn't autoplay -->
+    <!-- <div id="slider" class="carousel" data-bs-ride="carousel" data-bs-interval="2000" data-bs-pause="hover">
+      <div class="carousel-inner">
+        <div class="center-picture carousel-item">
+          <img src="images/mashable.png" class="d-block w-20" alt="..." style="margin: auto;">
+          <h2>nedzad</h3>
+        </div>
+        <div class="center-picture carousel-item active">
+          <img src="images/TechCrunch.png" class="d-block w-20" alt="..." style="margin: auto;">
+          <h2>husein</h2>
+        </div>
+        <div class="center-picture carousel-item">
+          <img src="images/techcrunch.png" class="d-block w-20" alt="..." style="margin: auto;">
+          <h2>abdivehab</h1>
+        </div>
+      </div>
+    </div> -->
+
+    
+    
+    <!-- Press -->
+    
+    <section id="press">
+      <img class="press-image" src="images/techcrunch.png" alt="tc-logo">
+      <img class="press-image" src="images/tnw.png" alt="tnw-logo">
+      <img class="press-image" src="images/bizinsider.png" alt="biz-insider-logo">
+      <img class="press-image" src="images/mashable.png" alt="mashable-logo">
+      
+    </section>
+    
+    <!-- When you need equal height, add .h-100 to the cards. If you want equal heights by default, you can set $card-height: 100% in Sass. -->
+    
+    <!-- Pricing -->
+    
+    <section id="pricing">
+      
+    <h2>A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+
+      <div class="row">
+
+        <div class="pricing-column col-lg-4 col-md-6">
+
+          <div class="card h-100">
+            <div class="card-header">
+              <h3>Chihuahua</h3>
+            </div>
+            <div class="card-body">
+              <h2>Free</h2>
+              <p>5 Matches Per Day</p>
+              <p>10 Messages Per Day</p>
+              <p>Unlimited App Usage</p>
+              <div class="d-grid gap-2">
+                <!-- <button class="btn btn-primary" type="button">Button</button>
+                <button class="btn btn-primary" type="button">Button</button> -->
+                <button type="button" class="btn btn-lg btn-block btn-outline-dark">Sign Up</button>
+              </div>
+            </div>  
+          </div>  
+        
+        </div>
+
+        <div class="pricing-column col-lg-4 col-md-6">
+          
+          <div class="card h-100">
+            <div class="card-header">
+              <h3>Labrador</h3>
+            </div>
+            <div class="card-body">
+              <h2>$49 / mo</h2>
+              <p>Unlimited Matches</p>
+              <p>Unlimited Messages</p>
+              <p>Unlimited App Usage</p>
+              <div class="d-grid gap-2">
+                <button type="button" class="btn btn-lg btn-dark">Sign Up</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="pricing-column col-lg-4 col-md-12">
+          
+          <div class="card h-100 ">
+            <div class="card-header">
+              <h3>Mastiff</h3>
+            </div>
+            <div class="card-body">
+              <h2>$99 / mo</h2>
+              <p>Pirority Listing</p>
+              <p>Unlimited Matches</p>
+              <p>Unlimited Messages</p>
+              <p>Unlimited App Usage</p>
+              <div class="d-grid gap-2">
+                <button type="button" class="btn btn-lg btn-dark">Sign Up</button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      
+      
+      
+    </div>
+    
+    
+  </section>
+  
+  
+  <!-- Call to Action -->
+  
+  <section id="cta">
+    
+    <h3>Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button" class="cta-button btn btn-lg btn-dark"><i class="fab fa-apple"></i> Download</button>
+    <button type="button" class="cta-button btn btn-lg btn-outline-light"><i class="fab fa-apple"></i> Download</button>
+    
+  </section>
+  
+  
+  <!-- Footer -->
+  
+  <footer id="footer">
+
+    <p>© Copyright TinDog</p>
+    
+  </footer>
+  
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
